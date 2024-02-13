@@ -14,5 +14,7 @@ function triangle (){
     // calculate
     const area = 0.5*persflorts*persflorts2;
     console.log(area);
+    const calculateresult =document.getElementById('arearesult');
+    calculateresult.innerText= area;
 
 }

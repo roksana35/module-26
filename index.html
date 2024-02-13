@@ -20,14 +20,18 @@
                 <div class="card card-compact w-100% bg-base-100 shadow-xl">
                     <figure><img src="images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Triangle</h2>
-                      <p class="text-3xl">Area=0.5 X b X h</p>
+                      <h2 class="card-title text-3xl">Triangle</h2>
+                      <p class="text-2xl">Area=0.5 X b X h</p>
                       <div>
                         <input id="triangle-base" class="w-24 text-2xl p-2 bg-slate-100 rounded-lg" type="text" placeholder="b">
                         <span class="text-xl">cm</span>
                         <input id="triangle-height" class="w-24 text-2xl p-2 rounded-lg bg-slate-100" type="text" placeholder="h">
                         <span class="text-xl">cm</span>
                       </div>
+                      <div>
+                        <p class="text-2xl">Area: <span id="arearesult"></span><span> cm<sup>2</sup></span></p>
+                      </div>
+              
                       <div class="card-actions ">
                         <button onclick="triangle()" class="btn btn-primary w-full">Calculate</button>
                       </div>
@@ -37,10 +41,19 @@
                   <div class="card card-compact w-100% bg-base-100 shadow-xl">
                     <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <h2 class="card-title text-3xl">Rectangle</h2>
+                      <p class="text-2xl">Area (A) = w X I</p>
+                      <div>
+                        <input id="rectangle-width" class="w-24 text-2xl p-2 bg-slate-100 rounded-lg" type="text" placeholder="W">
+                        <span class="text-xl">cm</span>
+                        <input id="rectangle-l" class="w-24 text-2xl p-2 rounded-lg bg-slate-100" type="text" placeholder="I">
+                        <span class="text-xl">cm</span>
+                      </div>
+                      <div>
+                        <p class="text-2xl">Area: <span id="arearesult2"></span><span> cm<sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions">
+                        <button onclick="rectangle()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -98,5 +111,6 @@
         </div>
     </main>
     <script src="js/triangle.js"></script>
+    <script src="js/rectangle.js"></script>
 </body>
 </html>
